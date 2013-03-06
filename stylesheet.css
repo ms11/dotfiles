@@ -12,59 +12,107 @@ a {
 	outline: none;
 }
 
+h2 {
+	color: #222;
+	font-weight: 700;
+	font-size: 30pt;
+	padding: 0;
+	margin: 0;
+}
+
 #sidebar {
 	display: block;
+	position: fixed;
 	float: left;
 	width: 160px;
 	height: 100%;
+	border-right: 1px dotted #ddd;
+}
+
+#sidebar a {
+	display: block;
+	margin: 15px;
+	
+	font-weight: 400;
+	font-size: 14pt;
+	color: #444;
+	text-decoration: none;
+}
+
+#sidebar .userstyles,
+#sidebar .startpage,
+#sidebar .themes,
+#sidebar .terminal,
+#sidebar .vim {
+	border-bottom: 1px dotted #ddd;
 }
 
 #title {
-	position: fixed;
-	padding: 10px;
+	border-bottom: 1px dotted #ddd;
+	width: 100%;
 }
 
 #title a {
+	font-weight: 600;
 	font-size: 30pt;
 	text-decoration: none;
 	color: #111;
 }
 
-#title a:hover {
+#title a:hover,
+#sidebar a:hover {
 	color: #0b72d9;
-	transition: all 0.2s ease 0s;
-	-moz-transition: all 0.2s ease 0s;
-	-webkit-transition: all 0.2s ease 0s;
+	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
 }
 
-#main {
-	position: fixed;
+#main,
+#clean,
+#ribbon,
+#userChrome,
+#startpage,
+#themes,
+#terminal,
+#vim {
 	width: auto;
-	height: 100%;
-	right: 10px;
-	left: 10px;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 15%;
+	padding-left: 15%;
 	margin-left: 161px;
 	text-align: center;
-	padding-top: 20%;
 
-	font-weight: 700;
-	font-size: 14pt;
-	color: #555;
-	border-left: 1px dotted #ddd;
+	font-weight: 600;
+	font-size: 24px;
+	color: #444;
+	border-bottom: 1px dotted #ddd;
 }
 
 #main a,
+#clean .links a,
+#ribbon .links a,
+#userChrome .links a,
+#startpage .links a,
+#terminal .links a, 
 #themes a,
 #vim a {
 	text-decoration: none;
+	font-size: 18px;
 	font-weight: 600;
-	color: #777;
-	border: 2px solid #888;
-	padding: 6px;
-	border-radius: 6px;
+	color: #888;
+	border: 2px solid #aaa;
+	padding: 8px;
+	margin: 4px;
+	border-radius: 30px;
 }
 
 #main a:hover,
+#clean .links a:hover,
+#ribbon .links a:hover,
+#userChrome .links a:hover,
+#startpage .links a:hover,
+#terminal .links a:hover, 
 #themes a:hover,
 #vim a:hover {
 	color: #0b72d9;
@@ -79,122 +127,6 @@ a {
 	padding: 0;
 }
 
-#userstyles {
-	height: 135px;
-}
-
-#start_container,
-#themes_container,
-#term_container,
-#vim_container {
-	height: 50px;
-}
-
-#clean:before {
-	content: "4chan Clean";
-	position: fixed;
-	top: 80px;
-	left: 10px;
-	width: 160px;
-
-	color: #666;
-	font-size: 14pt;
-	font-weight: 400;
-	text-align: left;
-}
-
-#ribbon:before {
-	content: "4chan Ribbon";
-	position: fixed;
-	top: 125px;
-	left: 10px;
-	width: 160px;
-
-	color: #666;
-	font-size: 14pt;
-	font-weight: 400;
-	text-align: left;
-}
-
-#userChrome:before {
-	content: "userChrome";
-	position: fixed;
-	top: 170px;
-	left: 10px;
-	width: 160px;
-	
-	color: #666;
-	font-size: 14pt;
-	font-weight: 400;
-	text-align: left;
-}
-
-#startpage:before {
-	content: "Start page";
-	position: fixed;
-	top: 215px;
-	left: 10px;
-	width: 160px;
-	
-	color: #666;
-	font-size: 14pt;
-	font-weight: 400;
-	text-align: left;
-}
-
-#themes:before {
-	content: "Themes";
-	position: fixed;
-	top: 260px;
-	left: 10px;
-	width: 160px;
-	
-	color: #666;
-	font-size: 14pt;
-	font-weight: 400;
-	text-align: left;
-}
-
-#terminal:before {
-	content: "Terminal";
-	position: fixed;
-	top: 305px;
-	left: 10px;
-	width: 160px;
-	
-	color: #666;
-	font-size: 14pt;
-	font-weight: 400;
-	text-align: left;
-}
-
-#vim:before {
-	content: "Vim";
-	position: fixed;
-	top: 350px;
-	left: 10px;
-	width: 160px;
-	
-	color: #666;
-	font-size: 14pt;
-	font-weight: 400;
-	text-align: left;
-}
-
-#clean:hover::before,
-#ribbon:hover::before,
-#userChrome:hover::before,
-#startpage:hover::before,
-#themes:hover::before,
-#terminal:hover::before,
-#vim:hover::before {
-	color: #333;
-	transition: all 0.5s ease 0s;
-	-moz-transition: all 0.5s ease 0s;
-	-webkit-transition: all 0.5s ease 0s;
-	cursor: default;
-}
-
 #clean,
 #ribbon,
 #userChrome,
@@ -202,37 +134,7 @@ a {
 #themes,
 #terminal,
 #vim {
-	position: fixed;
-	top: -3000px;
-	right: 10px;
-	left: 10px;
-	bottom: auto;
-	margin-left: 161px;
-	z-index: 2;
-	height: 100%;
-	width: auto;
-	
-	background: #fff;
-	text-align: center;
-	color: #555;
-	font-weight: 700;
-	font-size: 14pt;
-	border-left: 1px dotted #ddd;
-}
-
-#clean:hover,
-#ribbon:hover,
-#userChrome:hover,
-#startpage:hover,
-#themes:hover,
-#terminal:hover,
-#vim:hover {
-	position: absolute;
-	top: 0;
-	height: 100%;
-	padding-top: 5%;
-	padding-bottom: 10%;
-	transition: all 0.7s ease 0s;
+	font-weight: 400;
 }
 
 #clean img,
@@ -240,22 +142,16 @@ a {
 #userChrome img,
 #startpage img {
 	display: block;
-	width: 80%;
+	width: 100%;
 	max-width: 1191px;
-	margin: 0 auto;
+	margin-top: 30px;
 
 	border-radius: 2px;
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
 }
 
 #terminal img {
-	display: block;
-	width: 50%;
 	max-width: 502px;
-	margin: 0 auto;
-
-	border-radius: 2px;
-	box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
 }
 
 #userChrome img {
@@ -269,30 +165,4 @@ a {
 #terminal .links {
 	margin-top: 30px;
 	margin-bottom: 30px;
-}
-
-#clean .links a,
-#ribbon .links a,
-#userChrome .links a,
-#startpage .links a,
-#terminal .links a {
-	text-decoration: none;
-	font-weight: 600;
-	color: #777;
-	border: 2px solid #888;
-	padding: 6px;
-	margin: 4px;
-	border-radius: 6px;
-}
-
-#clean .links a:hover,
-#ribbon .links a:hover,
-#userChrome .links a:hover,
-#startpage .links a:hover,
-#terminal .links a:hover {
-	color: #0b72d9;
-	border: 2px solid #0b72d9;
-	transition: all 0.3s ease 0s;
-	-moz-transition: all 0.3s ease 0s;
-	-webkit-transition: all 0.3s ease 0s;
 }
