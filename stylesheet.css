@@ -33,6 +33,8 @@ a {
 #title a:hover {
 	color: #0b72d9;
 	transition: all 0.2s ease 0s;
+	-moz-transition: all 0.2s ease 0s;
+	-webkit-transition: all 0.2s ease 0s;
 }
 
 #main {
@@ -68,6 +70,7 @@ a {
 	color: #0b72d9;
 	border: 2px solid #0b72d9;
 	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
 }
 
 #themes .norm_link,
@@ -187,6 +190,8 @@ a {
 #vim:hover::before {
 	color: #333;
 	transition: all 0.5s ease 0s;
+	-moz-transition: all 0.5s ease 0s;
+	-webkit-transition: all 0.5s ease 0s;
 	cursor: default;
 }
 
@@ -288,4 +293,6 @@ a {
 	color: #0b72d9;
 	border: 2px solid #0b72d9;
 	transition: all 0.3s ease 0s;
+	-moz-transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
 }
