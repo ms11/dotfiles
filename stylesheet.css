@@ -26,7 +26,7 @@ h2 {
 	float: left;
 	width: 160px;
 	height: 100%;
-	border-right: 1px dotted #ddd;
+	border-right: 1px dotted #ccc;
 }
 
 #sidebar a {
@@ -44,11 +44,11 @@ h2 {
 #sidebar .themes,
 #sidebar .terminal,
 #sidebar .vim {
-	border-bottom: 1px dotted #ddd;
+	border-bottom: 1px dotted #ccc;
 }
 
 #title {
-	border-bottom: 1px dotted #ddd;
+	border-bottom: 1px dotted #ccc;
 	width: 100%;
 }
 
@@ -86,7 +86,7 @@ h2 {
 	font-weight: 600;
 	font-size: 24px;
 	color: #444;
-	border-bottom: 1px dotted #ddd;
+	border-bottom: 1px dotted #ccc;
 }
 
 #main a,
@@ -101,10 +101,10 @@ h2 {
 	font-size: 18px;
 	font-weight: 600;
 	color: #888;
-	border: 2px solid #aaa;
+	border: 1px dotted #aaa;
+	background: #fff;
 	padding: 8px;
 	margin: 4px;
-	border-radius: 30px;
 }
 
 #main a:hover,
@@ -115,14 +115,15 @@ h2 {
 #terminal .links a:hover, 
 #themes a:hover,
 #vim a:hover {
+	border: 1px solid #0b72d9;
 	color: #0b72d9;
-	border: 2px solid #0b72d9;
 	transition: all 0.3s ease 0s;
 	-webkit-transition: all 0.3s ease 0s;
 }
 
 #themes .norm_link,
 #themes .norm_link:hover {
+	font-size: 24px;
 	border: none;
 	padding: 0;
 }
@@ -140,14 +141,16 @@ h2 {
 #clean img,
 #ribbon img,
 #userChrome img,
-#startpage img {
+#startpage img,
+#terminal img {
 	display: block;
 	width: 100%;
 	max-width: 1191px;
+	margin: 0 auto;
 	margin-top: 30px;
 
-	border-radius: 2px;
 	box-shadow: 0px 1px 3px rgba(0,0,0,0.25);
+	border: 1px solid transparent;
 }
 
 #terminal img {
@@ -156,6 +159,17 @@ h2 {
 
 #userChrome img {
 	max-width: 939px;
+}
+
+#clean img:hover, 
+#ribbon img:hover,
+#userChrome img:hover,
+#startpage img:hover,
+#terminal img:hover {
+	border: 1px solid #0b72d9;
+	color: #0b72d9;
+	transition: all 0.3s ease 0s;
+	-webkit-transition: all 0.3s ease 0s;
 }
 
 #clean .links,
