@@ -15,7 +15,7 @@ a {
 h2 {
 	color: #222;
 	font-weight: 700;
-	font-size: 30pt;
+	font-size: 30px;
 	padding: 0;
 	margin: 0;
 }
@@ -34,7 +34,7 @@ h2 {
 	margin: 15px;
 	
 	font-weight: 400;
-	font-size: 14pt;
+	font-size: 14px;
 	color: #444;
 	text-decoration: none;
 }
@@ -43,7 +43,8 @@ h2 {
 #sidebar .startpage,
 #sidebar .themes,
 #sidebar .terminal,
-#sidebar .vim {
+#sidebar .vim,
+#sidebar .tmux {
 	border-bottom: 1px dotted #ccc;
 }
 
@@ -54,7 +55,7 @@ h2 {
 
 #title a {
 	font-weight: 600;
-	font-size: 30pt;
+	font-size: 30px;
 	text-decoration: none;
 	color: #111;
 }
@@ -74,7 +75,8 @@ h2 {
 #startpage_cont,
 #themes_cont,
 #terminal_cont,
-#vim_cont {
+#vim_cont,
+#tmux_cont {
 	width: auto;
 	padding-top: 5%;
 	padding-bottom: 5%;
@@ -84,7 +86,7 @@ h2 {
 	text-align: center;
 
 	font-weight: 600;
-	font-size: 24px;
+	font-size: 18px;
 	color: #444;
 	border-bottom: 1px dotted #ccc;
 }
@@ -96,9 +98,10 @@ h2 {
 #startpage_cont .links a,
 #terminal_cont .links a, 
 #themes_cont a,
-#vim_cont .links a {
+#vim_cont .links a,
+#tmux_cont .links a {
 	text-decoration: none;
-	font-size: 18px;
+	font-size: 14px;
 	font-weight: 600;
 	color: #888;
 	border: 1px dotted #aaa;
@@ -114,7 +117,8 @@ h2 {
 #startpage_cont .links a:hover,
 #terminal_cont .links a:hover, 
 #themes_cont a:hover,
-#vim_cont .links a:hover {
+#vim_cont .links a:hover,
+#tmux_cont .links a:hover {
 	border: 1px solid #0b72d9;
 	color: #0b72d9;
 	transition: all 0.3s ease 0s;
@@ -124,7 +128,7 @@ h2 {
 
 #themes_cont .norm_link,
 #themes_cont .norm_link:hover {
-	font-size: 24px;
+	font-size: 18px;
 	border: none;
 	padding: 0;
 }
@@ -135,7 +139,8 @@ h2 {
 #startpage_cont,
 #themes_cont,
 #terminal_cont,
-#vim_cont {
+#vim_cont,
+#tmux_cont {
 	font-weight: 400;
 }
 
@@ -144,7 +149,8 @@ h2 {
 #userchrome_cont img,
 #startpage_cont img,
 #terminal_cont img,
-#vim_cont img {
+#vim_cont img,
+#tmux_cont img {
 	display: block;
 	width: 100%;
 	max-width: 1191px;
@@ -156,11 +162,15 @@ h2 {
 }
 
 #terminal_cont img {
-	max-width: 502px;
+	max-width: 494px;
 }
 
 #vim_cont img {
-	max-width: 509px;
+	max-width: 495px;
+}
+
+#tmux_cont img {
+	max-width: 503px;
 }
 
 #userchrome_cont img {
@@ -172,7 +182,8 @@ h2 {
 #userchrome_cont img:hover,
 #startpage_cont img:hover,
 #terminal_cont img:hover,
-#vim_cont img:hover {
+#vim_cont img:hover,
+#tmux_cont img:hover {
 	border: 1px solid #0b72d9;
 	color: #0b72d9;
 	transition: all 0.3s ease 0s;
@@ -185,7 +196,8 @@ h2 {
 #userchrome_cont .links,
 #startpage_cont .links,
 #terminal_cont .links,
-#vim_cont .links {
+#vim_cont .links,
+#tmux_cont .links {
 	margin-top: 30px;
 	margin-bottom: 30px;
 }
