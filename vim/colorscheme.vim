@@ -19,7 +19,7 @@ hi Underlined	ctermfg=blue			cterm=underline
 hi label		ctermfg=darkyellow
 hi operator		ctermfg=darkmagenta		ctermbg=none
 
-hi ErrorMsg		ctermfg=red
+hi ErrorMsg		ctermfg=red ctermbg=none
 hi WarningMsg	ctermfg=red
 hi ModeMsg		ctermfg=none
 hi MoreMsg		ctermfg=none
