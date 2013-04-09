@@ -31,9 +31,15 @@
 			"groups": {
 				"mode": { "fg": "darkestcyan", "bg": "white", "attr": ["bold"] },
 				"background:divider": { "fg": "white", "bg": "darkestblue" },
-				"branch:divider": { "fg": "white", "bg": "darkestblue" },
-                "line_percent": { "fg": "gray10", "bg": "darkblue" },
-                "branch": { "fg": "gray10", "bg": "darkblue" }
+				"branch:divider": { "fg": "white", "bg": "darkblue" },
+				"line_percent": { "fg": "gray10", "bg": "darkblue" },
+				"branch": { "fg": "gray10", "bg": "darkblue" },
+				"file_name": { "fg": "white", "bg": "darkblue" },
+				"file_directory": { "fg": "white", "bg": "darkblue" },
+				"file_format": { "fg": "gray10", "bg": "darkestblue" },
+				"file_encoding": { "fg": "gray10", "bg": "darkestblue" },
+				"file_type": { "fg": "gray10", "bg": "darkestblue" },
+				"modified_buffers": { "fg": "white", "bg":"darkblue" }
 			}
 		},
 		"v": {
