@@ -34,7 +34,7 @@
 				"branch:divider": { "fg": "white", "bg": "darkblue" },
 				"line_percent": { "fg": "gray10", "bg": "darkblue" },
 				"branch": { "fg": "gray10", "bg": "darkblue" },
-				"file_name": { "fg": "white", "bg": "darkblue" },
+				"file_name": { "fg": "white", "bg": "darkblue", "attr": ["bold"]},
 				"file_directory": { "fg": "white", "bg": "darkblue" },
 				"file_format": { "fg": "gray10", "bg": "darkestblue" },
 				"file_encoding": { "fg": "gray10", "bg": "darkestblue" },
