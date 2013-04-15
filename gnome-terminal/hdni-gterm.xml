@@ -18,7 +18,7 @@
       <key>global/confirm_window_close</key>
       <schema_key>/schemas/apps/gnome-terminal/global/confirm_window_close</schema_key>
       <value>
-        <bool>true</bool>
+        <bool>false</bool>
       </value>
     </entry>
     <entry>
@@ -92,7 +92,7 @@
       <key>keybindings/help</key>
       <schema_key>/schemas/apps/gnome-terminal/keybindings/help</schema_key>
       <value>
-        <string>F1</string>
+        <string>F13</string>
       </value>
     </entry>
     <entry>
@@ -344,7 +344,7 @@
       <key>profiles/Default/custom_command</key>
       <schema_key>/schemas/apps/gnome-terminal/profiles/Default/custom_command</schema_key>
       <value>
-        <string>/usr/local/bin/gnome-terminal-command.sh</string>
+          <string></string>
       </value>
     </entry>
     <entry>
@@ -393,7 +393,7 @@
       <key>profiles/Default/font</key>
       <schema_key>/schemas/apps/gnome-terminal/profiles/Default/font</schema_key>
       <value>
-        <string>Tewi 9</string>
+        <string>Terminus 9</string>
       </value>
     </entry>
     <entry>
@@ -498,7 +498,7 @@
       <key>profiles/Default/use_custom_command</key>
       <schema_key>/schemas/apps/gnome-terminal/profiles/Default/use_custom_command</schema_key>
       <value>
-        <bool>true</bool>
+        <bool>false</bool>
       </value>
     </entry>
     <entry>
@@ -636,7 +636,7 @@
     <entry>
       <key>profiles/Profile0/font</key>
       <value>
-        <string>Tewi 9</string>
+        <string>Terminus 9</string>
       </value>
     </entry>
     <entry>
