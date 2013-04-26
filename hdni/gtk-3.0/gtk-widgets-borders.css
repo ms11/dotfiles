@@ -15,7 +15,7 @@ GtkSwitch.trough:active {
 .button {
     border-radius: 5px;
     border-width: 2px;
-    border-style: solid;
+    border-style: none;
     border-color: transparent;
 }
 
@@ -191,7 +191,7 @@ GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar .button
 .entry {
     border-radius: 5px;
     border-width: 3px;
-    border-style: solid;
+    border-style: none;
     border-color: transparent;
 }
 

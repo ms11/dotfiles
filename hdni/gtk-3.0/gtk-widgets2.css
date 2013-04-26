@@ -154,7 +154,7 @@ GtkAssistant .sidebar {
     background-color: shade (@theme_bg_color, 0.97);
     border-right-color: shade (@theme_bg_color, 0.8);
     border-radius: 0;
-    border-style: solid;
+    border-style: none;
     border-width: 0 1px 0 0;
     padding: 12px;
 
@@ -567,7 +567,7 @@ row:selected {
                                      from (shade (@theme_selected_bg_color, 1.05)),
                                      to (shade (@theme_selected_bg_color, 0.95)));
     border-top-color: shade (@theme_selected_bg_color, 0.88);
-    border-style: solid;
+    border-style: none;
     border-width: 1px 0 0 0;
 
     color: @theme_selected_fg_color;
@@ -808,7 +808,7 @@ GtkComboBox.combobox-entry .button:insensitive:backdrop,
 .frame {
     border-radius: 4px;
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     border-color: shade (@theme_bg_color, 0.82);
     border-image: none;
     box-shadow: inset 0px 1px 2px 1px alpha(black, 0.3);
@@ -829,7 +829,7 @@ GtkIconView.view.cell:selected:focused {
                                      to (shade (@theme_selected_bg_color, 0.9)));*/
     background-color: alpha (@theme_selected_bg_color, 0.3);
     border-radius: 4px;
-    border-style: solid;
+    border-style: none;
     border-width: 2px;
     border-color: @theme_selected_bg_color;
 
@@ -845,7 +845,7 @@ GtkIconView.view.cell:selected:focused {
     background-color: alpha (@theme_selected_bg_color, 0.35);
     border-color: @theme_selected_bg_color;
     border-radius: 0;
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
 }
 
@@ -864,7 +864,7 @@ GtkImage:insensitive {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@info_bg_color, 1.04)),
                                      to (shade (@info_bg_color, 0.96)));
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
 
     color: @info_fg_color;
@@ -882,7 +882,7 @@ GtkImage:insensitive {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@warning_bg_color, 1.04)),
                                      to (shade (@warning_bg_color, 0.96)));
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
 
     color: @warning_fg_color;
@@ -900,7 +900,7 @@ GtkImage:insensitive {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@question_bg_color, 1.04)),
                                      to (shade (@question_bg_color, 0.96)));
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
 
     color: @question_fg_color;
@@ -918,7 +918,7 @@ GtkImage:insensitive {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@error_bg_color, 1.04)),
                                      to (shade (@error_bg_color, 0.96)));
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
 
     color: @error_fg_color;
@@ -950,7 +950,7 @@ GtkLabel:insensitive {
                                      to (shade (@theme_bg_color, 1.05)));
     padding: 0;
     border-width: 0px;
-    border-style: solid;
+    border-style: none;
 
     color: @theme_fg_color;
 }
@@ -981,7 +981,7 @@ GtkLabel:insensitive {
     background-image: none;
     /*border-width: 0 0 1px 0;
     border-bottom-color: shade(@toolbar_gradient_start, 0.9);
-    border-style: solid;*/
+    border-style: none;*/
 
     color: @theme_fg_color;
     /*text-shadow: 0 -1px shade (@dark_bg_color, 0.6);*/
@@ -1003,7 +1003,7 @@ GtkLabel:insensitive {
     padding: 2px 6px;
     border-radius: 16px;
     border-width: 0 0 1px 0;
-    border-style: solid;
+    border-style: none;
     border-image: none;
     border-color: transparent;
 }
@@ -1017,7 +1017,7 @@ GtkLabel:insensitive {
 .menubar .menuitem:hover {
     border-radius: 12px;
     border-width: 0 0 1px 0;
-    border-style: solid;
+    border-style: none;
     border-image: none;
     border-color: shade(@toolbar_gradient_start, 1.1);
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -1039,7 +1039,7 @@ GtkLabel:insensitive {
 .menu .menuitem/*,
 .menu > **/ {
     border-radius: 0;
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     padding: 3px 6px;
 
@@ -1064,7 +1064,7 @@ GtkComboBox .menuitem *:hover {
                                      from (shade (@theme_selected_bg_color, 1.05)),
                                      to (shade (@theme_selected_bg_color, 0.95)));
     border-width: 1px 0;
-    border-style: solid;
+    border-style: none;
     border-top-color: @theme_bg_color;
     border-bottom-color: shade (@theme_selected_bg_color, 0.9);
 
@@ -1111,7 +1111,7 @@ GtkComboBox .menuitem *:hover {
     background-color: @theme_bg_color;
     background-image: none;
     border-radius: 0;
-    border-style: solid;
+    border-style: none;
     border-width: 0;
     padding: 0;
 
@@ -1169,7 +1169,7 @@ GtkComboBox .menuitem *:hover {
     background-clip: border-box;
     border-color: shade (@theme_bg_color, 0.82);
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
 }
 
 .notebook tab {
@@ -1178,7 +1178,7 @@ GtkComboBox .menuitem *:hover {
     background-color: @notebook_tab_bg_color;
     background-clip: padding-box;
     border-width: 5px 16px 0px 16px;
-    border-style: solid;
+    border-style: none;
     -unico-focus-border-color: transparent;
     -unico-focus-fill-color: transparent;
 }
@@ -1274,7 +1274,7 @@ GtkProgressBar {
                                      to (shade (@theme_selected_bg_color, 0.975)));*/
     background-repeat: repeat;
     background-position: cover;
-    border-style: solid;
+    border-style: none;
     border-color: @progressbar_border_color;
 
     box-shadow: inset 0px 1px 2px 0px alpha (white, 0.2);
@@ -1287,7 +1287,7 @@ GtkProgressBar {
     /*background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@theme_bg_color, 1.02)),
                                      to (shade (@theme_bg_color, 0.96)));*/
-    border-style: solid;
+    border-style: none;
     border-color: @backdrop_progressbar_border_color;
 
     box-shadow: inset 0px 1px 2px 0px @highlight_color;
@@ -1329,7 +1329,7 @@ GtkProgressBar {
                                      from (alpha (black, 0.15)),
                                      color-stop (0.4, alpha (black, 0.12)),
                                      to (alpha (black, 0.05)));
-    border-style: solid;
+    border-style: none;
     border-width: 1px;
     border-radius: 8px;
     border-color: transparent;
@@ -1426,7 +1426,7 @@ GtkLevelBar.vertical {
 
 .level-bar.fill-block {
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
 
     border-color: shade (@theme_selected_bg_color, 0.85);
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -1599,7 +1599,7 @@ GtkScale.mark {
 .scrollbar.slider.vertical:hover,
 .scrollbar.button.vertical {
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     border-color: shade (@theme_bg_color, 0.86);
     background-image: -gtk-gradient (linear, left top, right top,
                                      from (shade (@button_bg_color, 1.08)),
@@ -1658,7 +1658,7 @@ GtkScrolledWindow.frame {
     border-bottom-color: shade (@theme_bg_color, 0.86);
     border-left-color: shade (@theme_bg_color, 0.76);
     border-radius: 0;
-    border-style: solid;
+    border-style: none;
 }
 
 .ubuntu-online-accounts.frame {
@@ -1670,7 +1670,7 @@ GtkScrolledWindow.frame {
  *************/
 .separator {
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     border-image: none;
     border-color: @shadow_color;
     border-bottom-color: @highlight_color;
@@ -1716,7 +1716,7 @@ GtkComboBox .separator {
 .menuitem.separator {
     -GtkMenuItem-horizontal-padding: 0;
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
     border-image: none;
     border-color: alpha (@shadow_color, 0.8);
     border-bottom-color: @highlight_menu_color;
@@ -1753,7 +1753,7 @@ GtkComboBox .menuitem.separator {
 
 .sidebar .frame {
     border-width: 1px 0 0 0;
-    border-style: solid;
+    border-style: none;
     border-color: shade(@sidebar_bg_color, 0.9);
     border-radius: 0;
 }
@@ -1772,7 +1772,7 @@ GtkComboBox .menuitem.separator {
                                      to (@sidebar_selected_bg_color));
     border-top-color: shade (@sidebar_selected_bg_color, 0.9);
     border-bottom-color: alpha (white, 0.3);
-    border-style: solid;
+    border-style: none;
     border-width: 1px 0 1px 0;
     color: @sidebar_fg_color;
     text-shadow: 0 1px alpha (white, 0.2);
@@ -1785,7 +1785,7 @@ GtkComboBox .menuitem.separator {
                                      to (shade(@sidebar_selected_bg_color, 1.15)));
     border-top-color: shade(@sidebar_selected_bg_color, 1.05);
     border-bottom-color: alpha (white, 0.3);
-    border-style: solid;
+    border-style: none;
     border-width: 1px 0 1px 0;
     color: shade(@sidebar_fg_color, 1.5);
     text-shadow: 0 1px alpha (white, 0.2);
@@ -2062,7 +2062,7 @@ GtkTextView {
                                      from (@toolbar_gradient_start),
                                      to (@toolbar_gradient_end));
     border-bottom-color: @toolbar_border;
-    border-style: solid;
+    border-style: none;
     border-width: 0 0 1px 0;
 
     color: @theme_fg_color;
@@ -2238,7 +2238,7 @@ GtkContainer > GtkContainer > GtkContainer > GtkContainer > * > .toolbar {
                                      color-stop (0.08, shade (@theme_bg_color, 0.97)),
                                      to (shade (@theme_bg_color, 1.0)));
     border-width: 0 1px 1px 1px;
-    border-style: solid;
+    border-style: none;
     border-radius: 3px;
     border-top-right-radius: 0;
     border-top-left-radius: 0;
@@ -2395,7 +2395,7 @@ GtkTootip,
                                      to (alpha (@tooltip_bg_color, 0.86)));
     border-color: transparent;
     border-radius: 16px;
-    border-style: solid;
+    border-style: none;
     border-width: 4px;
 
     color: @tooltip_fg_color;
@@ -2413,7 +2413,7 @@ GtkTreeView.dnd {
     border-color: shade (@theme_selected_bg_color, 1.12);
     border-radius: 2px;
     border-width: 1px;
-    border-style: solid;
+    border-style: none;
 }
 
 GtkTreeView .entry {
